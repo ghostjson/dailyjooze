@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>DailyJooz</title>
+  </head>
+  <body class="relative">
+    <img
+      src="./oranges.png"
+      tabindex="-1"
+      class="absolute -top-8 -left-8 h-52 md:h-64 -z-10"
+    />
+    <div class="max-w-[1200px] md:px-4 pt-24 mx-auto flex flex-col z-10">
+      <img
+        src="./header.png"
+        alt="Daily jooz"
+        class="self-center md:self-end h-48 md:h-64 xl:h-80"
+      />
+
+      <div class="flex gap-2 md:gap-3 xl:gap-10 justify-center items-end mt-5">
+        <img src="./daily-schedule.png" tabindex="-1" class="h-32 md:h-64" />
+        <img src="./weekly-schedule.png" tabindex="-1" class="h-24 md:h-48" />
+        <img src="./target-tracker.png" tabindex="-1" class="h-24 md:h-48" />
+      </div>
+
+      <div class="bg-[#f8f4ed] my-5 xl:my-10">
+        <div
+          class="w-full p-2 bg-[#b69250] flex items-center justify-evenly text-white"
+        >
+          <label class="flex items-center gap-2 cursor-pointer">
+            <input
+              type="checkbox"
+              name="daily-schedule"
+              class="outline outline-emerald-800 outline-1 checked:bg-emerald-800"
+            />
+            <span>Daily Schedule - FREE</span>
+          </label>
+          <label class="flex items-center gap-2 cursor-pointer">
+            <input
+              type="checkbox"
+              name="weekly-planner"
+              class="outline outline-emerald-800 outline-1 checked:bg-emerald-800"
+            />
+            <span>Weekly Planner - FREE</span>
+          </label>
+          <label class="flex items-center gap-2 cursor-pointer">
+            <input
+              type="checkbox"
+              name="target-tracker"
+              class="outline outline-emerald-800 outline-1 checked:bg-emerald-800"
+            />
+            <span>Target Tracker - FREE</span>
+          </label>
+        </div>
+        <div class="p-8 text-[#f36b0b] flex flex-col space-y-8">
+          <span class="text-xl">Download the selected files to:</span>
+          <label class="flex gap-2 items-center">
+            <span>Email</span>
+            <input
+              type="text"
+              class="focus:outline-none border-2 border-[#f36b0b] p-2 bg-white w-full"
+            />
+          </label>
+          <label class="flex gap-2 items-center">
+            <span>Whatsapp</span>
+            <input
+              type="text"
+              class="focus:outline-none border-2 border-[#f36b0b] p-2 bg-white w-full"
+            />
+          </label>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
