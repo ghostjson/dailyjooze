@@ -13,7 +13,7 @@
       tabindex="-1"
       class="absolute -top-8 -left-8 h-52 md:h-64 -z-10"
     />
-    <div class="max-w-[1200px] md:px-4 pt-24 mx-auto flex flex-col z-10">
+    <div class="max-w-[1200px] md:px-4 py-24 mx-auto flex flex-col z-10">
       <img
         src="./header.png"
         alt="Daily jooz"
@@ -34,7 +34,7 @@
             <input
               type="checkbox"
               name="daily-schedule"
-              class="outline outline-emerald-800 outline-1 checked:bg-emerald-800"
+              class="outline outline-emerald-800 outline-1 checked:bg-emerald-800 cursor-pointer"
             />
             <span>Daily Schedule - FREE</span>
           </label>
@@ -42,7 +42,7 @@
             <input
               type="checkbox"
               name="weekly-planner"
-              class="outline outline-emerald-800 outline-1 checked:bg-emerald-800"
+              class="outline outline-emerald-800 outline-1 checked:bg-emerald-800 cursor-pointer"
             />
             <span>Weekly Planner - FREE</span>
           </label>
@@ -50,12 +50,14 @@
             <input
               type="checkbox"
               name="target-tracker"
-              class="outline outline-emerald-800 outline-1 checked:bg-emerald-800"
+              class="outline outline-emerald-800 outline-1 checked:bg-emerald-800 cursor-pointer"
             />
             <span>Target Tracker - FREE</span>
           </label>
         </div>
-        <div class="p-8 text-[#f36b0b] flex flex-col space-y-8">
+        <div
+          class="p-8 px-4 md:32 xl:px-44 text-[#f36b0b] flex flex-col space-y-8"
+        >
           <span class="text-xl">Download the selected files to:</span>
           <label class="flex gap-2 items-center">
             <span>Email</span>
@@ -66,13 +68,22 @@
           </label>
           <label class="flex gap-2 items-center">
             <span>Whatsapp</span>
-            <input
-              type="text"
-              class="focus:outline-none border-2 border-[#f36b0b] p-2 bg-white w-full"
-            />
+            <span class="relative w-full">
+              <span
+                class="absolute bottom-[50%] transform translate-y-1/2 left-2 z-10"
+                >+</span
+              >
+              <input
+                type="text"
+                class="focus:outline-none border-2 border-[#f36b0b] p-2 pl-6 bg-white w-full phone relative"
+              />
+            </span>
           </label>
         </div>
       </div>
+      <a href="" class="self-center">
+        <img src="./button.png" alt="button" class="h-10" />
+      </a>
     </div>
   </body>
 </html>
