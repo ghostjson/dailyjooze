@@ -25,7 +25,7 @@ app.post("/api/v1/download", (req, res) => {
       { flag: "a+" }
     );
 
-    if (downloads.daily && downloads.weekly && downloads.tracker) {
+    if (downloads.daily && downloads.weekly && downloads.target) {
       res.sendFile(__dirname + "/downloads/all.zip");
     } else if (downloads.daily && downloads.weekly) {
       res.sendFile(__dirname + "/downloads/DJdaily-DJweekly.zip");
